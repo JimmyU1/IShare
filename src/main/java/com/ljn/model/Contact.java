@@ -1,10 +1,9 @@
 package com.ljn.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import java.sql.Timestamp;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Contact entity. @author MyEclipse Persistence Tools
@@ -47,6 +46,8 @@ public class Contact implements java.io.Serializable {
 	// Property accessors
 	@Id
 	@Column(name = "id", unique = true, nullable = false, length = 32)
+	@GenericGenerator(name = "idGenerator", strategy = "identity")
+	@GeneratedValue(generator = "idGenerator")
 	public String getId() {
 		return this.id;
 	}

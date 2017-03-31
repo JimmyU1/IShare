@@ -1,17 +1,11 @@
 package com.ljn.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Basebook entity. @author MyEclipse Persistence Tools
@@ -73,6 +67,8 @@ public class Basebook implements java.io.Serializable {
 	// Property accessors
 	@Id
 	@Column(name = "book_id", unique = true, nullable = false, length = 32)
+    @GenericGenerator(name = "idGenerator", strategy = "identity")
+    @GeneratedValue(generator = "idGenerator")
 	public String getBookId() {
 		return this.bookId;
 	}

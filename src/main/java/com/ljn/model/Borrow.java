@@ -1,16 +1,10 @@
 package com.ljn.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import java.sql.Timestamp;
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import javax.persistence.*;
 
 /**
  * Borrow entity. @author MyEclipse Persistence Tools
@@ -58,6 +52,8 @@ public class Borrow implements java.io.Serializable {
 	// Property accessors
 	@Id
 	@Column(name = "id", unique = true, nullable = false, length = 32)
+	@GenericGenerator(name = "idGenerator", strategy = "identity")
+	@GeneratedValue(generator = "idGenerator")
 	public String getId() {
 		return this.id;
 	}
