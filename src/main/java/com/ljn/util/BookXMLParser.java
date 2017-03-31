@@ -14,10 +14,11 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
+
 /**
  * Created by ljn19 on 2017/3/5.
  */
-public class BookXMLParser extends DefaultHandler{
+public class BookXMLParser extends DefaultHandler {
     private Basebook book = null;
 
     private final StringBuilder buff = new StringBuilder();
@@ -51,6 +52,7 @@ public class BookXMLParser extends DefaultHandler{
 
     /**
      * 解析XML头部信息
+     *
      * @param uri
      * @param localName
      * @param name
@@ -75,6 +77,7 @@ public class BookXMLParser extends DefaultHandler{
 
     /**
      * 解析XML尾部信息
+     *
      * @param uri
      * @param localName
      * @param name
@@ -111,6 +114,7 @@ public class BookXMLParser extends DefaultHandler{
 
     /**
      * 字符串解析
+     *
      * @param ch
      * @param start
      * @param length

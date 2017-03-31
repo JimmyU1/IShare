@@ -1,6 +1,7 @@
-package com.ljn.util;
+package com.ljn.common;
 
 import com.ljn.model.Basebook;
+import com.ljn.util.BookXMLParser;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
@@ -17,12 +18,13 @@ public class RetrieveDocumentByURL {
 
     /**
      * 从豆瓣网通过ISBN13获取图书信息
+     *
      * @param isbn13 13位ISBN编码
      * @return BaseBook对象
      * @throws ClientProtocolException 协议解析异常
-     * @throws IOException IO异常
+     * @throws IOException             IO异常
      */
-    public static Basebook retrieveDocument(String isbn13)  throws ClientProtocolException,IOException {
+    public static Basebook retrieveDocument(String isbn13) throws ClientProtocolException, IOException {
         String url = "http://api.douban.com/book/subject/isbn/" + isbn13;
         DefaultHttpClient client = new DefaultHttpClient();
         HttpGet get = new HttpGet(url);
