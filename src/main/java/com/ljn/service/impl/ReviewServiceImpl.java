@@ -9,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @Service("reviewService")
-public class ReviewServiceImpl implements ReviewService {
+public class ReviewServiceImpl extends BaseServiceImpl implements ReviewService {
 }

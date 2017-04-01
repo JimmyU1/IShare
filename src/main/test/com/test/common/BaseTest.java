@@ -1,17 +1,21 @@
-package com.ljn.service.impl;
+package com.test.common;
 
 import com.ljn.dao.*;
-import org.springframework.stereotype.Service;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
 /**
- * Created by ljn19 on 2017-03-31.
+ * Created by ljn19 on 2017-04-01.
  */
+@ContextConfiguration(locations = {"classpath:spring.xml","classpath:spring-hibernate.xml"})
+@RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
-@Service("baseService")
-public class BaseServiceImpl {
+public class BaseTest {
     @Resource
     protected UserDao userDao;
 

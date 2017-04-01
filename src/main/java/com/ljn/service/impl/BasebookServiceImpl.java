@@ -9,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @Service("basebookService")
-public class BasebookServiceImpl implements BasebookService{
+public class BasebookServiceImpl extends BaseServiceImpl implements BasebookService{
 }

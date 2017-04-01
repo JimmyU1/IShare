@@ -9,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @Service("contactService")
-public class ContactServiceImpl implements ContactService{
+public class ContactServiceImpl extends BaseServiceImpl implements ContactService{
 }

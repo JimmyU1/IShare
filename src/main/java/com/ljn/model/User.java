@@ -65,9 +65,9 @@ public class User implements java.io.Serializable {
 
 	// Property accessors
 	@Id
-	@Column(name = "id", unique = true, nullable = false, length = 32)
-	@GenericGenerator(name = "idGenerator", strategy = "identity")
-	@GeneratedValue(generator = "idGenerator")
+	@Column(name = "id", unique = true, nullable = false, length = 64)
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
 	public String getId() {
 		return this.id;
 	}
@@ -94,7 +94,7 @@ public class User implements java.io.Serializable {
 		this.userName = userName;
 	}
 
-	@Column(name = "password", length = 32)
+	@Column(name = "password", length = 40)
 	public String getPassword() {
 		return this.password;
 	}

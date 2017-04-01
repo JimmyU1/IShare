@@ -9,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @Service("ownershipService")
-public class OwnershipServiceImpl implements OwnershipService {
+public class OwnershipServiceImpl extends BaseServiceImpl implements OwnershipService {
 }

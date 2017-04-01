@@ -9,5 +9,5 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @Transactional
 @Service("borrowService")
-public class BorrowServiceImpl implements BorrowService {
+public class BorrowServiceImpl extends BaseServiceImpl implements BorrowService {
 }

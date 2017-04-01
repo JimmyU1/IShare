@@ -12,4 +12,6 @@ public interface UserService {
      * @return
      */
     public boolean isExist(User user);
+
+    public void saveUser(User user);
 }

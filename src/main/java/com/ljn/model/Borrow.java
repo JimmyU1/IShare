@@ -51,9 +51,9 @@ public class Borrow implements java.io.Serializable {
 
 	// Property accessors
 	@Id
-	@Column(name = "id", unique = true, nullable = false, length = 32)
-	@GenericGenerator(name = "idGenerator", strategy = "identity")
-	@GeneratedValue(generator = "idGenerator")
+	@Column(name = "id", unique = true, nullable = false, length = 64)
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
 	public String getId() {
 		return this.id;
 	}

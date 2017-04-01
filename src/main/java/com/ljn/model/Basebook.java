@@ -66,9 +66,9 @@ public class Basebook implements java.io.Serializable {
 
 	// Property accessors
 	@Id
-	@Column(name = "book_id", unique = true, nullable = false, length = 32)
-    @GenericGenerator(name = "idGenerator", strategy = "identity")
-    @GeneratedValue(generator = "idGenerator")
+	@Column(name = "book_id", unique = true, nullable = false, length = 64)
+	@GeneratedValue(generator = "system-uuid")
+	@GenericGenerator(name = "system-uuid", strategy = "uuid")
 	public String getBookId() {
 		return this.bookId;
 	}

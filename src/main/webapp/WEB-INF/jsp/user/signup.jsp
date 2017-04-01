@@ -35,14 +35,14 @@
 </div>
 <div id="content">
     <div class="container">
-        <form id="signup_form" action="" method="post">
+        <form id="signup_form" action="/user/signup" method="post">
             <div class="form-group">
                 <label for="userid">用户名: </label>
-                <input name="userid" type="text" id="userid"  placeholder="UserID">
+                <input name="userId" type="text" id="userid"  placeholder="UserID">
             </div>
             <div class="form-group">
                 <label for="username">真实姓名: </label>
-                <input name="username" type="email"  id="username" placeholder="UserName">
+                <input name="userName" type="text"  id="username" placeholder="UserName">
             </div>
             <div class="form-group">
                 <label for="password">密码：</label>
@@ -58,7 +58,7 @@
             </div>
             <div class="form-group">
                 <label for="telephone">电话：</label>
-                <input name="telephone" type="tel"  id="telephone" placeholder="Telephone">
+                <input name="telephone" type="text"  id="telephone" placeholder="Telephone">
             </div>
             <div class="form-group">
                 <label for="mobile">手机：</label>
@@ -72,7 +72,7 @@
 
 <%@include file="../common/footer.jsp"%>
 </body>
-<script type="text/javascript" src="<%=basePath%>js/modernizr.js"
+<script type="text/javascript" src="<%=basePath%>js/modernizr.js"></script>
 <script type="text/javascript" src="<%=basePath%>js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="<%=basePath%>js/bootstrap.min.js"></script>
 </html>
