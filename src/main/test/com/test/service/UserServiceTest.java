@@ -1,17 +1,17 @@
-package com.test.dao;
+package com.test.service;
+
+/**
+ * Created by ljn19 on 2017-04-01.
+ */
 
 import com.ljn.model.User;
 import com.ljn.util.MD5;
-import com.test.common.BaseDaoTest;
+import com.test.common.BaseServiceTest;
 import org.junit.Test;
 import org.springframework.test.context.transaction.TransactionConfiguration;
 
-/**
- * Created by ljn19 on 2017/3/5.
- */
-@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = false)
-public class UserDaoTest extends BaseDaoTest {
-
+@TransactionConfiguration(transactionManager = "transactionManager" , defaultRollback = false)
+public class UserServiceTest extends BaseServiceTest {
     @Test
     public void saveUser(){
         User user = new User();
@@ -21,7 +21,6 @@ public class UserDaoTest extends BaseDaoTest {
         user.setCompany("CRSC");
         user.setDepartment("研究院");
         user.setIsAffirm(false);
-        System.out.println(user.getId());
-        userDao.save(user);
+        userService.saveUser(user);
     }
 }

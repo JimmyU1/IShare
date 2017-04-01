@@ -1,10 +1,10 @@
 package com.test.common;
 
-import com.ljn.dao.*;
+import com.ljn.model.Ownership;
+import com.ljn.service.*;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
@@ -15,25 +15,25 @@ import javax.annotation.Resource;
 @ContextConfiguration(locations = {"classpath:spring.xml","classpath:spring-hibernate.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
-public class BaseTest {
+public class BaseServiceTest {
     @Resource
-    protected UserDao userDao;
+    protected BasebookService basebookService;
 
     @Resource
-    protected BasebookDao basebookDao;
+    protected BorrowService borrowService;
 
     @Resource
-    protected BorrowDao borrowDao;
+    protected CategoryService categoryService;
 
     @Resource
-    protected CategoryDao categoryDao;
+    protected ContactService contactService;
 
     @Resource
-    protected ContactDao contactDao;
+    protected OwnershipService ownershipService;
 
     @Resource
-    protected OwnershipDao ownershipDao;
+    protected ReviewService reviewService;
 
     @Resource
-    protected ReviewDao reviewDao;
+    protected UserService userService;
 }

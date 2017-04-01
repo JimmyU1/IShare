@@ -8,10 +8,14 @@ import com.ljn.model.User;
 public interface UserService {
     /**
      * 数据库中是否存在这样的
-     * @param user
-     * @return
+     * @param user User对象
+     * @return true or false
      */
     public boolean isExist(User user);
 
+    /**
+     * 保存User对象到数据库
+     * @param user 保存User对象到数据库
+     */
     public void saveUser(User user);
 }

@@ -5,7 +5,8 @@ import com.ljn.service.UserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.UUID;
+import java.sql.Timestamp;
+import java.util.Date;
 
 /**
  * Created by ljn19 on 2017-03-30.
@@ -21,6 +22,7 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService {
 
     @Override
     public void saveUser(User user) {
+        user.setGmtCreate(new Timestamp(new Date().getTime()));
         userDao.save(user);
     }
 }

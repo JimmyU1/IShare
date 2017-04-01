@@ -974,3 +974,198 @@ org.hibernate.AssertionFailure: null id in com.ljn.model.User entry (don't flush
 [INFO][2017-04-01 11:15:17,307][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 11:15:14 CST 2017]; root of context hierarchy
 [INFO][2017-04-01 11:15:17,308][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
 [INFO][2017-04-01 11:15:17,316][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2017-04-01 12:01:28,056][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2017-04-01 12:01:28,244][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2017-04-01 12:01:28,305][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2017-04-01 12:01:28,385][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 12:01:28 CST 2017]; root of context hierarchy
+[INFO][2017-04-01 12:01:28,525][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2017-04-01 12:01:28,573][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2017-04-01 12:01:28,747][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2017-04-01 12:01:28,864][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2017-04-01 12:01:29,292][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-04-01 12:01:29,300][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2017-04-01 12:01:29,302][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-04-01 12:01:29,305][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-04-01 12:01:29,824][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-04-01 12:01:30,015][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-04-01 12:01:30,019][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2017-04-01 12:01:30,049][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2017-04-01 12:01:30,368][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-04-01 12:01:30,368][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-04-01 12:01:30,371][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-04-01 12:01:30,392][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.basebook
+[INFO][2017-04-01 12:01:30,392][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [summary, gmt_create, author_intro, gmt_update, category_id, author, image_path, isbn13, publisher, isbn10, book_id, book_name]
+[INFO][2017-04-01 12:01:30,392][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_category]
+[INFO][2017-04-01 12:01:30,392][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_category, primary]
+[INFO][2017-04-01 12:01:30,400][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.borrow
+[INFO][2017-04-01 12:01:30,400][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, ownership_id, gmt_update, borrower_id, is_affirm, begin_date, id, return_date]
+[INFO][2017-04-01 12:01:30,400][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [ownership_id, borrower_id]
+[INFO][2017-04-01 12:01:30,400][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [ownership_id_idx, borrower_id_idx, primary]
+[INFO][2017-04-01 12:01:30,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.category
+[INFO][2017-04-01 12:01:30,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, category_en, gmt_update, category_id, category_ch]
+[INFO][2017-04-01 12:01:30,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 12:01:30,407][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 12:01:30,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.contact
+[INFO][2017-04-01 12:01:30,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, gmt_update, name, id, email, content]
+[INFO][2017-04-01 12:01:30,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 12:01:30,414][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 12:01:30,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.ownership
+[INFO][2017-04-01 12:01:30,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, ownership_id, gmt_update, is_return, user_id, book_id]
+[INFO][2017-04-01 12:01:30,422][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [user_id, book_id]
+[INFO][2017-04-01 12:01:30,422][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [book_id_idx, user_id_idx, primary]
+[INFO][2017-04-01 12:01:30,430][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.review
+[INFO][2017-04-01 12:01:30,430][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, review_id, gmt_update, user_id, book_id, content]
+[INFO][2017-04-01 12:01:30,430][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_userreview, fk_bookbasereview]
+[INFO][2017-04-01 12:01:30,430][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [book_id_idx, user_id_idx, primary]
+[INFO][2017-04-01 12:01:30,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.user
+[INFO][2017-04-01 12:01:30,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, password, gmt_update, is_affirm, user_id, phone, user_name, company, telephone, id, department]
+[INFO][2017-04-01 12:01:30,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 12:01:30,438][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 12:01:30,439][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-04-01 12:01:30,573][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2017-04-01 12:01:28",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1334405552, ConnectTime:"2017-04-01 12:01:29", UseCount:2, LastActiveTime:"2017-04-01 12:01:30"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-04-01 12:01:30,695][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@27eb3298]; rollback [false]
+[INFO][2017-04-01 12:01:30,879][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@44ea608c testClass = UserDaoTest, testInstance = com.test.dao.UserDaoTest@50cf5a23, testMethod = saveUser@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@450794b4 testClass = UserDaoTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2017-04-01 12:01:30,884][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 12:01:28 CST 2017]; root of context hierarchy
+[INFO][2017-04-01 12:01:30,884][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2017-04-01 12:01:30,895][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2017-04-01 16:23:00,644][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2017-04-01 16:23:00,814][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2017-04-01 16:23:00,872][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2017-04-01 16:23:00,948][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 16:23:00 CST 2017]; root of context hierarchy
+[INFO][2017-04-01 16:23:01,076][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2017-04-01 16:23:01,125][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2017-04-01 16:23:01,317][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2017-04-01 16:23:01,455][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2017-04-01 16:23:01,901][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-04-01 16:23:01,908][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2017-04-01 16:23:01,911][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-04-01 16:23:01,913][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-04-01 16:23:02,378][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-04-01 16:23:02,585][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-04-01 16:23:02,593][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2017-04-01 16:23:02,640][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2017-04-01 16:23:02,974][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-04-01 16:23:02,974][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-04-01 16:23:02,977][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-04-01 16:23:03,001][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.basebook
+[INFO][2017-04-01 16:23:03,002][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [summary, gmt_create, author_intro, gmt_update, category_id, author, image_path, isbn13, publisher, isbn10, book_id, book_name]
+[INFO][2017-04-01 16:23:03,002][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_category]
+[INFO][2017-04-01 16:23:03,002][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_category, primary]
+[INFO][2017-04-01 16:23:03,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.borrow
+[INFO][2017-04-01 16:23:03,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, ownership_id, gmt_update, borrower_id, is_affirm, begin_date, id, return_date]
+[INFO][2017-04-01 16:23:03,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [ownership_id, borrower_id]
+[INFO][2017-04-01 16:23:03,009][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [ownership_id_idx, borrower_id_idx, primary]
+[INFO][2017-04-01 16:23:03,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.category
+[INFO][2017-04-01 16:23:03,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, category_en, gmt_update, category_id, category_ch]
+[INFO][2017-04-01 16:23:03,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 16:23:03,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 16:23:03,021][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.contact
+[INFO][2017-04-01 16:23:03,021][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, gmt_update, name, id, email, content]
+[INFO][2017-04-01 16:23:03,021][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 16:23:03,021][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 16:23:03,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.ownership
+[INFO][2017-04-01 16:23:03,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, ownership_id, gmt_update, is_return, user_id, book_id]
+[INFO][2017-04-01 16:23:03,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [user_id, book_id]
+[INFO][2017-04-01 16:23:03,029][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [book_id_idx, user_id_idx, primary]
+[INFO][2017-04-01 16:23:03,036][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.review
+[INFO][2017-04-01 16:23:03,036][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, review_id, gmt_update, user_id, book_id, content]
+[INFO][2017-04-01 16:23:03,036][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_userreview, fk_bookbasereview]
+[INFO][2017-04-01 16:23:03,037][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [book_id_idx, user_id_idx, primary]
+[INFO][2017-04-01 16:23:03,045][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.user
+[INFO][2017-04-01 16:23:03,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, password, gmt_update, is_affirm, user_id, phone, user_name, company, telephone, id, department]
+[INFO][2017-04-01 16:23:03,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 16:23:03,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 16:23:03,047][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-04-01 16:23:03,196][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2017-04-01 16:23:01",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1334405552, ConnectTime:"2017-04-01 16:23:02", UseCount:2, LastActiveTime:"2017-04-01 16:23:03"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-04-01 16:23:03,311][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@27eb3298]; rollback [true]
+[INFO][2017-04-01 16:23:03,436][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Rolled back transaction after test execution for test context [TestContext@3704122f testClass = UserServiceTest, testInstance = com.test.service.UserServiceTest@3153ddfc, testMethod = saveUser@UserServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@60afd40d testClass = UserServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2017-04-01 16:23:03,440][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 16:23:00 CST 2017]; root of context hierarchy
+[INFO][2017-04-01 16:23:03,441][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2017-04-01 16:23:03,448][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2017-04-01 16:23:39,868][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2017-04-01 16:23:40,034][org.springframework.context.annotation.ClassPathBeanDefinitionScanner]JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+[INFO][2017-04-01 16:23:40,088][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2017-04-01 16:23:40,172][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 16:23:40 CST 2017]; root of context hierarchy
+[INFO][2017-04-01 16:23:40,325][org.springframework.context.support.PropertySourcesPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2017-04-01 16:23:40,375][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[ERROR][2017-04-01 16:23:40,571][com.alibaba.druid.pool.DruidAbstractDataSource]maxIdle is deprecated
+[INFO][2017-04-01 16:23:40,708][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2017-04-01 16:23:41,133][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2017-04-01 16:23:41,139][org.hibernate.Version]HHH000412: Hibernate Core {4.2.5.Final}
+[INFO][2017-04-01 16:23:41,141][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2017-04-01 16:23:41,143][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2017-04-01 16:23:41,560][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-04-01 16:23:41,735][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2017-04-01 16:23:41,740][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2017-04-01 16:23:41,774][org.hibernate.id.UUIDHexGenerator]HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[INFO][2017-04-01 16:23:42,068][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2017-04-01 16:23:42,068][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2017-04-01 16:23:42,073][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2017-04-01 16:23:42,097][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.basebook
+[INFO][2017-04-01 16:23:42,097][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [summary, gmt_create, author_intro, gmt_update, category_id, author, image_path, isbn13, publisher, isbn10, book_id, book_name]
+[INFO][2017-04-01 16:23:42,097][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_category]
+[INFO][2017-04-01 16:23:42,097][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [fk_category, primary]
+[INFO][2017-04-01 16:23:42,105][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.borrow
+[INFO][2017-04-01 16:23:42,105][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, ownership_id, gmt_update, borrower_id, is_affirm, begin_date, id, return_date]
+[INFO][2017-04-01 16:23:42,105][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [ownership_id, borrower_id]
+[INFO][2017-04-01 16:23:42,105][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [ownership_id_idx, borrower_id_idx, primary]
+[INFO][2017-04-01 16:23:42,112][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.category
+[INFO][2017-04-01 16:23:42,112][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, category_en, gmt_update, category_id, category_ch]
+[INFO][2017-04-01 16:23:42,112][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 16:23:42,112][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 16:23:42,119][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.contact
+[INFO][2017-04-01 16:23:42,120][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, gmt_update, name, id, email, content]
+[INFO][2017-04-01 16:23:42,120][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 16:23:42,120][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 16:23:42,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.ownership
+[INFO][2017-04-01 16:23:42,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, ownership_id, gmt_update, is_return, user_id, book_id]
+[INFO][2017-04-01 16:23:42,129][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [user_id, book_id]
+[INFO][2017-04-01 16:23:42,130][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [book_id_idx, user_id_idx, primary]
+[INFO][2017-04-01 16:23:42,137][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.review
+[INFO][2017-04-01 16:23:42,138][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, review_id, gmt_update, user_id, book_id, content]
+[INFO][2017-04-01 16:23:42,138][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_userreview, fk_bookbasereview]
+[INFO][2017-04-01 16:23:42,138][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [book_id_idx, user_id_idx, primary]
+[INFO][2017-04-01 16:23:42,146][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: ishare.user
+[INFO][2017-04-01 16:23:42,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [gmt_create, password, gmt_update, is_affirm, user_id, phone, user_name, company, telephone, id, department]
+[INFO][2017-04-01 16:23:42,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2017-04-01 16:23:42,147][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [primary]
+[INFO][2017-04-01 16:23:42,148][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2017-04-01 16:23:42,280][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2017-04-01 16:23:40",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:1334405552, ConnectTime:"2017-04-01 16:23:41", UseCount:2, LastActiveTime:"2017-04-01 16:23:42"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-04-01 16:23:42,399][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@27eb3298]; rollback [false]
+[INFO][2017-04-01 16:23:42,603][org.springframework.test.context.transaction.TransactionalTestExecutionListener]Committed transaction after test execution for test context [TestContext@1162410a testClass = UserServiceTest, testInstance = com.test.service.UserServiceTest@b09fac1, testMethod = saveUser@UserServiceTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@62df0ff3 testClass = UserServiceTest, locations = '{classpath:spring.xml, classpath:spring-hibernate.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+[INFO][2017-04-01 16:23:42,608][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@6a2bcfcb: startup date [Sat Apr 01 16:23:40 CST 2017]; root of context hierarchy
+[INFO][2017-04-01 16:23:42,610][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448ff1a8: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,basebookDao,baseDao,borrowDao,categoryDao,contactDao,ownershipDao,reviewDao,userDao,basebookService,baseService,borrowService,categoryService,contactService,ownershipService,reviewService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2017-04-01 16:23:42,619][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
