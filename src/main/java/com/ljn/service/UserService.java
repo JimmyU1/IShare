@@ -14,6 +14,13 @@ public interface UserService {
     public boolean isExist(User user);
 
     /**
+     * 从数据库中获取User对象
+     * @param user User对象
+     * @return User对象
+     */
+    public User getUser(User user);
+
+    /**
      * 保存User对象到数据库
      * @param user 保存User对象到数据库
      */

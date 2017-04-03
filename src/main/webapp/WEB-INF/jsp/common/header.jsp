@@ -9,7 +9,6 @@
 <style>
     #page-header {
         padding-left: 20%;
-
     }
 
     #navbar {
