@@ -2,8 +2,8 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import java.sql.Timestamp;
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 /**
  * Contact entity. @author MyEclipse Persistence Tools
@@ -101,4 +101,15 @@ public class Contact implements java.io.Serializable {
 		this.gmtUpdate = gmtUpdate;
 	}
 
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", content='" + content + '\'' +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtUpdate=" + gmtUpdate +
+                '}';
+    }
 }

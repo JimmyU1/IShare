@@ -2,10 +2,10 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.*;
 
 /**
  * Category entity. @author MyEclipse Persistence Tools
@@ -103,4 +103,15 @@ public class Category implements java.io.Serializable {
 		this.basebooks = basebooks;
 	}
 
+    @Override
+    public String toString() {
+        return "Category{" +
+                "categoryId='" + categoryId + '\'' +
+                ", categoryCh='" + categoryCh + '\'' +
+                ", categoryEn='" + categoryEn + '\'' +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtUpdate=" + gmtUpdate +
+                ", basebooks=" + basebooks +
+                '}';
+    }
 }

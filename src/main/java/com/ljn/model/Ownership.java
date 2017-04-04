@@ -2,10 +2,10 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.*;
 
 /**
  * Ownership entity. @author MyEclipse Persistence Tools
@@ -117,4 +117,16 @@ public class Ownership implements java.io.Serializable {
 		this.borrows = borrows;
 	}
 
+    @Override
+    public String toString() {
+        return "Ownership{" +
+                "ownershipId='" + ownershipId + '\'' +
+                ", user=" + user +
+                ", basebook=" + basebook +
+                ", isReturn=" + isReturn +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtUpdate=" + gmtUpdate +
+                ", borrows=" + borrows +
+                '}';
+    }
 }

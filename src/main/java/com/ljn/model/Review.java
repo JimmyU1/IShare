@@ -2,8 +2,8 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
-import java.sql.Timestamp;
 import javax.persistence.*;
+import java.sql.Timestamp;
 
 /**
  * Review entity. @author MyEclipse Persistence Tools
@@ -103,4 +103,15 @@ public class Review implements java.io.Serializable {
 		this.gmtUpdate = gmtUpdate;
 	}
 
+    @Override
+    public String toString() {
+        return "Review{" +
+                "reviewId='" + reviewId + '\'' +
+                ", user=" + user +
+                ", basebook=" + basebook +
+                ", content='" + content + '\'' +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtUpdate=" + gmtUpdate +
+                '}';
+    }
 }

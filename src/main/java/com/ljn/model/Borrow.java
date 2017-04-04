@@ -2,9 +2,9 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
-import javax.persistence.*;
 
 /**
  * Borrow entity. @author MyEclipse Persistence Tools
@@ -129,4 +129,17 @@ public class Borrow implements java.io.Serializable {
 		this.gmtUpdate = gmtUpdate;
 	}
 
+    @Override
+    public String toString() {
+        return "Borrow{" +
+                "id='" + id + '\'' +
+                ", user=" + user +
+                ", ownership=" + ownership +
+                ", beginDate=" + beginDate +
+                ", returnDate=" + returnDate +
+                ", isAffirm=" + isAffirm +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtUpdate=" + gmtUpdate +
+                '}';
+    }
 }

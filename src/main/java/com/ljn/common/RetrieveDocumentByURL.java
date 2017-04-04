@@ -2,11 +2,11 @@ package com.ljn.common;
 
 import com.ljn.model.Basebook;
 import com.ljn.util.BookXMLParser;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.HttpEntity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,7 +24,7 @@ public class RetrieveDocumentByURL {
      * @throws ClientProtocolException 协议解析异常
      * @throws IOException             IO异常
      */
-    public static Basebook retrieveDocument(String isbn13) throws ClientProtocolException, IOException {
+    public static Basebook retrieveDocument(String isbn13) throws IOException {
         String url = "http://api.douban.com/book/subject/isbn/" + isbn13;
         DefaultHttpClient client = new DefaultHttpClient();
         HttpGet get = new HttpGet(url);

@@ -41,6 +41,11 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:3.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.5.3" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient-cache:4.5.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpmime:4.5.3" />
+          <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">

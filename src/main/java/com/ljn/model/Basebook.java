@@ -2,10 +2,10 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.*;
 
 /**
  * Basebook entity. @author MyEclipse Persistence Tools
@@ -195,4 +195,23 @@ public class Basebook implements java.io.Serializable {
 		this.ownerships = ownerships;
 	}
 
+	@Override
+	public String toString() {
+		return "Basebook{" +
+				"bookId='" + bookId + '\'' +
+				", category=" + category +
+				", bookName='" + bookName + '\'' +
+				", author='" + author + '\'' +
+				", authorIntro='" + authorIntro + '\'' +
+				", isbn10='" + isbn10 + '\'' +
+				", isbn13='" + isbn13 + '\'' +
+				", publisher='" + publisher + '\'' +
+				", imagePath='" + imagePath + '\'' +
+				", summary='" + summary + '\'' +
+				", gmtCreate=" + gmtCreate +
+				", gmtUpdate=" + gmtUpdate +
+				", reviews=" + reviews +
+				", ownerships=" + ownerships +
+				'}';
+	}
 }

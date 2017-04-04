@@ -2,10 +2,10 @@ package com.ljn.model;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
-import javax.persistence.*;
 
 /**
  * User entity. @author MyEclipse Persistence Tools
@@ -193,4 +193,23 @@ public class User implements java.io.Serializable {
 		this.ownerships = ownerships;
 	}
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id='" + id + '\'' +
+                ", userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", company='" + company + '\'' +
+                ", department='" + department + '\'' +
+                ", telephone='" + telephone + '\'' +
+                ", phone='" + phone + '\'' +
+                ", isAffirm=" + isAffirm +
+                ", gmtCreate=" + gmtCreate +
+                ", gmtUpdate=" + gmtUpdate +
+                ", borrows=" + borrows +
+                ", reviews=" + reviews +
+                ", ownerships=" + ownerships +
+                '}';
+    }
 }
