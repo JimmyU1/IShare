@@ -1,0 +1,6 @@
+#忽略workspace.xml配置文件
+workspace.xml
+#忽略所有iml文件
+*.iml
+#忽略.idea文件夹
+/.idea
