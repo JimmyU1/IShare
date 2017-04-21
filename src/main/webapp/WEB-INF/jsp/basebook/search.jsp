@@ -45,11 +45,39 @@
         <div id="errorMsg">
 
         </div>
-        <button id="submitBtn" type="submit" class="btn btn-default"
-        ">搜索</button>
+        <button id="submitBtn" type="submit" class="btn btn-default">搜索</button>
     </form>
     <div id="basebookinfo">
-        ${requestScope.basebook.getBookName()}
+        <table class="table table-hover">
+            <tr>
+                <td rowspan="5">
+                    <img src="{requestScope.basebook.getImagePath()}">
+                </td>
+                <td>
+                    ${requestScope.basebook.getBookName()}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ${requestScope.basebook.getAuthorName()}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ${requestScope.basebook.getIsbn13()}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ${requestScope.basebook.getPublisher()}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ${requestScope.basebook.getSummary()}
+                </td>
+            </tr>
+        </table>
     </div>
 </div>
 <%@include file="../common/footer.jsp" %>
