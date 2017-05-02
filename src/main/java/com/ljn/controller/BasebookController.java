@@ -23,10 +23,7 @@ public class BasebookController extends BaseController {
         System.out.println("isbn13 : " + isbn13);
         Basebook basebook = null;
         try {
-            if("9787308083256".equals(isbn13))
-                basebook = basebookService.getBasebookByURL(isbn13);
-            else
-                System.out.print("error");
+            basebook = basebookService.getBasebookByURL(isbn13);
         } catch (IOException e) {
             e.printStackTrace();
         }

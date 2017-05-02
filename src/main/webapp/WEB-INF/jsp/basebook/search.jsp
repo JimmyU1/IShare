@@ -51,7 +51,8 @@
         <table class="table table-hover">
             <tr>
                 <td rowspan="5">
-                    <img src="{requestScope.basebook.getImagePath()}">
+                    <%--<img src={requestScope.basebook.getImagePath()}>--%>
+                    <img src=${requestScope.basebook.getImagePath()}>
                 </td>
                 <td>
                     ${requestScope.basebook.getBookName()}
@@ -59,7 +60,12 @@
             </tr>
             <tr>
                 <td>
-                    ${requestScope.basebook.getAuthorName()}
+                    ${requestScope.basebook.getAuthor()}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ${requestScope.basebook.getAuthorIntro()}
                 </td>
             </tr>
             <tr>

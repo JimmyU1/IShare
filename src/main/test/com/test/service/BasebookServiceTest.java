@@ -15,7 +15,7 @@ public class BasebookServiceTest extends BaseServiceTest {
 
     @Test
     public void saveBasebook() {
-        String isbn13 = "9787308083256";
+        String isbn13 = "9787508671581";
         try {
             basebookService.saveBasebook(isbn13);
         } catch (IOException e) {
@@ -25,7 +25,7 @@ public class BasebookServiceTest extends BaseServiceTest {
 
     @Test
     public void getBasebookByUrl(){
-        String isbn13 = "9787308083256";
+        String isbn13 = "9787508671581";
         try {
             Basebook basebook = basebookService.getBasebookByURL(isbn13);
             System.out.println(basebook.toString());

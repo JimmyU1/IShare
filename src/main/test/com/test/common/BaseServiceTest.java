@@ -1,6 +1,6 @@
 package com.test.common;
 
-import com.ljn.model.Ownership;
+
 import com.ljn.service.*;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
